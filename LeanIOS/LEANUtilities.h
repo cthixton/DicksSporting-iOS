@@ -27,7 +27,6 @@
 +(NSString*)capitalizeWords:(NSString*)string;
 +(NSString*)getLaunchImageName;
 +(void)configureWebView:(UIView*)webview;
-+ (void)configureViewportOfWebView:(WKWebView *)webview;
 + (WKProcessPool *)wkProcessPool;
 +(NSArray<NSPredicate*>*)createRegexArrayFromStrings:(id)input;
 +(BOOL)string:(NSString*)string matchesAnyRegex:(NSArray<NSPredicate*>*)regexes;

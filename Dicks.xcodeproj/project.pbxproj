@@ -30,7 +30,6 @@
 		2002B4FA18A99C4100495B3D /* LEANNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2002B4F318A99C4100495B3D /* LEANNavigationController.m */; };
 		2002B4FB18A99C4100495B3D /* LEANRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2002B4F518A99C4100495B3D /* LEANRootViewController.m */; };
 		2002B4FC18A99C4100495B3D /* LEANUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2002B4F718A99C4100495B3D /* LEANUtilities.m */; };
-		2002B51318AB093900495B3D /* jquery-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2002B51118AB091C00495B3D /* jquery-2.1.0.min.js */; };
 		2004820518B080DD005FDD9A /* SidebarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2004820418B080DD005FDD9A /* SidebarHeaderView.xib */; };
 		2004AF7B18F8F936001E01E9 /* LEANWebViewIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 2004AF7A18F8F936001E01E9 /* LEANWebViewIntercept.m */; };
 		2018EE951907671A00EC4311 /* LEANUrlInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2018EE941907671A00EC4311 /* LEANUrlInspector.m */; };
@@ -82,6 +81,7 @@
 		20F49C2519C7BE8900B46C5A /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F49C2419C7BE8900B46C5A /* MediaAccessibility.framework */; };
 		20F49C2719C7BE9100B46C5A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F49C2619C7BE9100B46C5A /* CoreText.framework */; };
 		20FC7FB5199D1C7800A70B08 /* LEANTabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 20FC7FB4199D1C7800A70B08 /* LEANTabManager.m */; };
+		215D2F92B39BB2B58DAE7E73 /* Pods_Dicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10936F2D34EE156BBE56BD3 /* Pods_Dicks.framework */; };
 		37011C962BC40AAE00775CA0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 37011C952BC40AAE00775CA0 /* PrivacyInfo.xcprivacy */; };
 		374399B62C2229E300B2F92D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 374399B42C2229E300B2F92D /* InfoPlist.strings */; };
 		379E3D432A2147C4001C8A01 /* GNSwiftUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E3D422A2147C4001C8A01 /* GNSwiftUtilities.swift */; };
@@ -105,7 +105,6 @@
 		BBED1D612A4CBEB000180EBF /* customJS.js in Resources */ = {isa = PBXBuildFile; fileRef = BBED1D602A4CBEB000180EBF /* customJS.js */; };
 		BBED1D632A4CBEC900180EBF /* iosCustomCSS.css in Resources */ = {isa = PBXBuildFile; fileRef = BBED1D622A4CBEC900180EBF /* iosCustomCSS.css */; };
 		BBED1D652A4CBED900180EBF /* iosCustomJS.js in Resources */ = {isa = PBXBuildFile; fileRef = BBED1D642A4CBED900180EBF /* iosCustomJS.js */; };
-		FB6DCB8FBCE7277C9B42BB0C /* Pods_Dicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C57C0CEFE07DD126F477CE4 /* Pods_Dicks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +131,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		089BFE9B39034A71DA002FDF /* Pods-Dicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicks.release.xcconfig"; path = "Target Support Files/Pods-Dicks/Pods-Dicks.release.xcconfig"; sourceTree = "<group>"; };
 		0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedianIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2002B49818A9991300495B3D /* Dicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2002B49B18A9991300495B3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -171,7 +171,6 @@
 		2002B4F518A99C4100495B3D /* LEANRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANRootViewController.m; sourceTree = "<group>"; };
 		2002B4F618A99C4100495B3D /* LEANUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANUtilities.h; sourceTree = "<group>"; };
 		2002B4F718A99C4100495B3D /* LEANUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANUtilities.m; sourceTree = "<group>"; };
-		2002B51118AB091C00495B3D /* jquery-2.1.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-2.1.0.min.js"; sourceTree = "<group>"; };
 		2004820418B080DD005FDD9A /* SidebarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SidebarHeaderView.xib; sourceTree = "<group>"; };
 		2004AF7918F8F936001E01E9 /* LEANWebViewIntercept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEANWebViewIntercept.h; sourceTree = "<group>"; };
 		2004AF7A18F8F936001E01E9 /* LEANWebViewIntercept.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewIntercept.m; sourceTree = "<group>"; };
@@ -272,8 +271,6 @@
 		39DE1E4C2C82015900E96CFE /* LEANLoadingSpinnerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLoadingSpinnerManager.m; sourceTree = "<group>"; };
 		4C74E9233A1532B38445C85A /* Pods-MedianIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		74686CE5E5C79A441C3D2C20 /* Pods-Median.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.debug.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.debug.xcconfig"; sourceTree = "<group>"; };
-		751E9592F950E41143B2CB44 /* Pods-Dicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicks.release.xcconfig"; path = "Target Support Files/Pods-Dicks/Pods-Dicks.release.xcconfig"; sourceTree = "<group>"; };
-		9C57C0CEFE07DD126F477CE4 /* Pods_Dicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A790DA6927FDBA77A0DE081F /* Pods-MedianIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedianIOSTests.release.xcconfig"; path = "Target Support Files/Pods-MedianIOSTests/Pods-MedianIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB182FAF2683478900DC8EAA /* LEANDlogDefinition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEANDlogDefinition.h; sourceTree = "<group>"; };
 		BB3C460D26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = GoNativeJSBridgeLibrary.js; sourceTree = "<group>"; };
@@ -285,7 +282,8 @@
 		BBED1D602A4CBEB000180EBF /* customJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = customJS.js; sourceTree = "<group>"; };
 		BBED1D622A4CBEC900180EBF /* iosCustomCSS.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = iosCustomCSS.css; sourceTree = "<group>"; };
 		BBED1D642A4CBED900180EBF /* iosCustomJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = iosCustomJS.js; sourceTree = "<group>"; };
-		D86220D27BB6A82C95E76BE1 /* Pods-Dicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicks.debug.xcconfig"; path = "Target Support Files/Pods-Dicks/Pods-Dicks.debug.xcconfig"; sourceTree = "<group>"; };
+		DFE3139E0FE5D698CA6FF4C3 /* Pods-Dicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicks.debug.xcconfig"; path = "Target Support Files/Pods-Dicks/Pods-Dicks.debug.xcconfig"; sourceTree = "<group>"; };
+		F10936F2D34EE156BBE56BD3 /* Pods_Dicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BBED51E055455D5C4808AF /* Pods-Median.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Median.release.xcconfig"; path = "Target Support Files/Pods-Median/Pods-Median.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -308,7 +306,7 @@
 				2002B49E18A9991300495B3D /* CoreGraphics.framework in Frameworks */,
 				2002B4A018A9991300495B3D /* UIKit.framework in Frameworks */,
 				2002B49C18A9991300495B3D /* Foundation.framework in Frameworks */,
-				FB6DCB8FBCE7277C9B42BB0C /* Pods_Dicks.framework in Frameworks */,
+				215D2F92B39BB2B58DAE7E73 /* Pods_Dicks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +363,7 @@
 				2002B49D18A9991300495B3D /* CoreGraphics.framework */,
 				2002B49F18A9991300495B3D /* UIKit.framework */,
 				0B6D83597DFB31F85DB20AAC /* Pods_MedianIOSTests.framework */,
-				9C57C0CEFE07DD126F477CE4 /* Pods_Dicks.framework */,
+				F10936F2D34EE156BBE56BD3 /* Pods_Dicks.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -389,7 +387,6 @@
 				374399B42C2229E300B2F92D /* InfoPlist.strings */,
 				20A525ED1A7D94EE00936DC5 /* Settings.bundle */,
 				209A964423BAC508001906F1 /* appbeep.wav */,
-				2002B51118AB091C00495B3D /* jquery-2.1.0.min.js */,
 				397F6C072AC147B000BD0474 /* LEANHeaders.h */,
 				3946F0272BD0DE7100E74ED5 /* ContextMenuHandler.swift */,
 				3972F5322D59C143009B5279 /* CustomMenu.swift */,
@@ -560,8 +557,8 @@
 				F9BBED51E055455D5C4808AF /* Pods-Median.release.xcconfig */,
 				4C74E9233A1532B38445C85A /* Pods-MedianIOSTests.debug.xcconfig */,
 				A790DA6927FDBA77A0DE081F /* Pods-MedianIOSTests.release.xcconfig */,
-				D86220D27BB6A82C95E76BE1 /* Pods-Dicks.debug.xcconfig */,
-				751E9592F950E41143B2CB44 /* Pods-Dicks.release.xcconfig */,
+				DFE3139E0FE5D698CA6FF4C3 /* Pods-Dicks.debug.xcconfig */,
+				089BFE9B39034A71DA002FDF /* Pods-Dicks.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -689,7 +686,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B927AA28C4F03E004D4C15 /* custom-icons.ttf in Resources */,
-				2002B51318AB093900495B3D /* jquery-2.1.0.min.js in Resources */,
 				20A13ABC1905FAA600B997DD /* MenuChildNoIcon.xib in Resources */,
 				BB3C460E26A9C1F9007D03DA /* GoNativeJSBridgeLibrary.js in Resources */,
 				20580E031B2E53730061943C /* offline.html in Resources */,
@@ -1060,7 +1056,7 @@
 		};
 		2002B4CE18A9991300495B3D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D86220D27BB6A82C95E76BE1 /* Pods-Dicks.debug.xcconfig */;
+			baseConfigurationReference = DFE3139E0FE5D698CA6FF4C3 /* Pods-Dicks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1068,7 +1064,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8HD495N2CV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1104,7 +1100,7 @@
 		};
 		2002B4CF18A9991300495B3D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 751E9592F950E41143B2CB44 /* Pods-Dicks.release.xcconfig */;
+			baseConfigurationReference = 089BFE9B39034A71DA002FDF /* Pods-Dicks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1112,7 +1108,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 8HD495N2CV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

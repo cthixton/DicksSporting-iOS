@@ -2115,8 +2115,6 @@ static NSInteger _currentWindows = 0;
         UIContentSizeCategory contentSizeCategory = [UIApplication sharedApplication].preferredContentSizeCategory;
         [self applyCssForContentSizeCategory:contentSizeCategory];
         
-        [LEANUtilities configureViewportOfWebView:self.wkWebview];
-        
         [self runJavascriptWithCallback:@[@"median_library_ready", @"gonative_library_ready"] data:nil];
     });
 }

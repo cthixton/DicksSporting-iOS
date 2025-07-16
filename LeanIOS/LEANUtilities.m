@@ -545,6 +545,8 @@
             [LEANUtilities injectJs:@"iosCustomJS" ToWebview:webview];
         }
         
+        [self configureViewportOfWebView:webview];
+        
         [((LEANAppDelegate *)[UIApplication sharedApplication].delegate).bridge loadUserScriptsForContentController:webview.configuration.userContentController];
         
         // for our faux content-inset
@@ -558,40 +560,38 @@
     }
 }
 
-
 + (void)configureViewportOfWebView:(WKWebView *)webview {
     NSNumber *viewportWidth = [GoNativeAppConfig sharedAppConfig].forceViewportWidth;
     NSString *pinchToZoom = [GoNativeAppConfig sharedAppConfig].pinchToZoom ? @"yes" : @"no";
-    
+
     NSString *stringViewport = @"";
     if (viewportWidth) {
         stringViewport = [NSString stringWithFormat:@"width=%@,user-scalable=%@", viewportWidth, pinchToZoom];
     }
-    
-    if (!stringViewport) {
-        stringViewport = @"";
-    }
-    
+
     NSString *scriptSource = [NSString stringWithFormat:
-        @"var gonative_setViewport = %@; "
-        "var gonative_viewportElement = document.querySelector('meta[name=viewport]'); "
-        "if (gonative_viewportElement) { "
-        "    if (gonative_setViewport) { "
-        "        gonative_viewportElement.content = gonative_setViewport; "
-        "    } else { "
-        "        gonative_viewportElement.content = gonative_viewportElement.content + ',user-scalable=%@'; "
-        "    } "
-        "} else if (gonative_setViewport) { "
-        "    gonative_viewportElement = document.createElement('meta'); "
-        "    gonative_viewportElement.name = 'viewport'; "
-        "    gonative_viewportElement.content = gonative_setViewport; "
-        "    document.head.appendChild(gonative_viewportElement); "
-        "}",
+        @"(function() {"
+         " var viewportContent = %@;"
+         " var viewport = document.querySelector('meta[name=viewport]');"
+         " if (viewport) {"
+         "     if (viewportContent) {"
+         "         viewport.content = viewportContent;"
+         "     } else {"
+         "         viewport.content += ',user-scalable=%@';"
+         "     }"
+         " } else if (viewportContent) {"
+         "     viewport = document.createElement('meta');"
+         "     viewport.name = 'viewport';"
+         "     viewport.content = viewportContent;"
+         "     document.head.appendChild(viewport);"
+         " }"
+         "})();",
         [LEANUtilities jsWrapString:stringViewport],
         pinchToZoom
     ];
 
-    [webview evaluateJavaScript:scriptSource completionHandler:nil];
+    WKUserScript *userScript = [[WKUserScript alloc] initWithSource:scriptSource injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+    [webview.configuration.userContentController addUserScript:userScript];
 }
 
 +(void)removeDoubleTapFromView:(UIView *)view {

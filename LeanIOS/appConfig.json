@@ -328,10 +328,10 @@
     "forceViewportWidth": null,
     "pinchToZoom": null,
     "iosDynamicType": null,
-    "navigationTitleImageLocation": "assets/defaults/app-icon-placeholder.png",
-    "navigationTitleImageLocationDark": "assets/defaults/app-icon-placeholder.png",
-    "androidHeaderImage": "assets/defaults/app-icon-placeholder.png",
-    "androidHeaderImageDark": "assets/defaults/app-icon-placeholder.png",
+    "navigationTitleImageLocation": "https://s3.amazonaws.com/gonativeio/app_files/noddjz/app_icon_ios_1746795767823.png",
+    "navigationTitleImageLocationDark": "https://s3.amazonaws.com/gonativeio/app_files/noddjz/app_icon_ios_1746795767823.png",
+    "androidHeaderImage": "https://s3.amazonaws.com/gonativeio/app_files/noddjz/app_icon_ios_1746795767823.png",
+    "androidHeaderImageDark": "https://s3.amazonaws.com/gonativeio/app_files/noddjz/app_icon_ios_1746795767823.png",
     "iosHeaderImageDark": "https://s3.amazonaws.com/gonativeio/app_files/noddjz/app_icon_ios_1746795767823.png"
   },
   "permissions": {
